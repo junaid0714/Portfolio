@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My Portfolio – Full Stack Java Developer"
+    />
+    <title>Mohammad Junaid Ahmed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="particle-canvas"></canvas>
+    <div class="bg-gradient"></div>
+    <aside class="sidebar" id="sidebar">
+      <div class="profile">
+        <img src="avatar-lg.png" alt="Profile" class="profile-img" />
+        <h2 class="name">Mohammad Junaid Ahmed</h2>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href="#home" class="active"
+          ><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#about"><i class="fa-regular fa-user"></i> About</a>
+        <a href="#skills"><i class="fa-solid fa-laptop-code"></i> Skills</a>
+        <a href="#projects"><i class="fa-regular fa-images"></i> Projects</a>
+        <a href="#certs"><i class="fa-solid fa-certificate"></i> Certificates</a>
+        <a href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a>
+      </nav>
+      <footer>
+        <p>Developed by <b>Junaid</b></p>
+        <p>&copy; 2025 <b>Junaid</b></p>
+      </footer>
+    </aside>
+  <div class="main-contents"></div>
+    <nav class="nav">
+      <div class="wrap">
+        <div class="brand">
+          <i class="fa-solid fa-terminal"></i> Junaid
+          <span class="muted">Mohammad</span>
+        </div>
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certs" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="mode-toggle" id="modeToggle" aria-label="Toggle theme">
+          <i class="fa-regular fa-moon"></i><span class="hide-sm">Theme</span>
+        </button>
+        <button class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <div class="title-row">
+          <span class="tag">Hyderabad, India</span>
+          <span class="tag">Full Stack Java Developer</span>
+        </div>
+        <h1 class="headline">
+          Hi, I'm
+          <span
+            style="
+              background: linear-gradient(
+                90deg,
+                var(--accent),
+                var(--accent-2)
+              );
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+            "
+            >Mohammad Junaid Ahmed</span
+          >
+        </h1>
+        <h2
+          class="muted"
+          style="font-size: clamp(18px, 2.2vw, 22px); font-weight: 600"
+        >
+          <span
+            class="typewriter"
+            id="typewriter"
+            aria-label="Animated role text"
+          ></span>
+        </h2>
+        <p class="muted" style="max-width: 60ch">
+          As a fresher, I am committed to developing a strong technical foundation 
+          through hands-on learning and practical project work. 
+          I focus on writing clean, efficient, and 
+          maintainable code while exploring modern frameworks and industry-standard tools. 
+          I aim to contribute to meaningful projects, 
+          expand my professional capabilities, and grow into a reliable full-stack developer.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects"
+            ><i class="fa-solid fa-rocket"></i> View Projects</a
+          >
+          <a
+            class="btn btn-ghost"
+            href="Junaid IT .pdf"
+            download
+            ><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a
+          >
+        </div>
+      </div>
+
+      <div class="avatar-wrap">
+        <div class="avatar card-avatar">
+          <img src="avatar-lg.png" alt="Mohammad Junaid Ahmed" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h3 class="section-title">About Me</h3>
+      <div class="about-grid">
+        <div class="card" style="padding: 18px">
+          <p class="muted" style="font-size: 1.02rem">
+            I’m Junaid — an IT student and self-taught developer 
+            dedicated to strengthening my technical skills through continuous learning and 
+            real project development. I actively explore modern technologies, 
+            refine my understanding of core computer science concepts, and 
+            work on building scalable, user-focused applications. 
+            My goal is to apply my knowledge in real-world environments and 
+            contribute to impactful solutions while developing professionally within the software industry.</p>
+          <ul class="muted" style="line-height: 1.9">
+            <li>
+              <strong>Primary stack:</strong> Java (Spring basics), HTML, CSS,
+              JavaScript, SQL
+            </li>
+            <li>
+              <strong>Also worked with:</strong> C/C++, Git/GitHub
+            </li>
+            <li>
+              <strong>Interests:</strong> Scalable APIs, microservices
+              fundamentals, backend design.
+            </li>
+          </ul>
+        </div>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card card">
+              <strong>2023 — 2025</strong>
+              <div class="muted">Master of computer applications (MCA)</div>
+              <div class="muted">
+                Focused on software development, Java technologies, and project-based learning.
+              </div>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card card">
+              <strong>2020 — 2023</strong>
+              <div class="muted">Bachelor of Science (MPCS)</div>
+              <div class="muted">
+                Studied Mathematics, Physics, and Computer Science with emphasis on programming fundamentals.
+              </div>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card card">
+              <strong>2018 — 2020</strong>
+              <div class="muted">Intermediate (mpc)</div>
+              <div class="muted">
+                Built strong analytical and problem-solving foundations through math and science.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <!-- <section id="skills" class="reveal">
+    <h3 class="section-title">Skills</h3>
+    <div class="skills-grid">
+      <div class="card skill" data-skill="90">
+        <div style="display:flex; justify-content:space-between; align-items:center"><strong>Java</strong><span class="muted">90%</span></div>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="card skill" data-skill="85">
+        <div style="display:flex; justify-content:space-between; align-items:center"><strong>HTML/CSS</strong><span class="muted">85%</span></div>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="card skill" data-skill="80">
+        <div style="display:flex; justify-content:space-between; align-items:center"><strong>JavaScript</strong><span class="muted">80%</span></div>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="card skill" data-skill="75">
+        <div style="display:flex; justify-content:space-between; align-items:center"><strong>SQL</strong><span class="muted">75%</span></div>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="card skill" data-skill="70">
+        <div style="display:flex; justify-content:space-between; align-items:center"><strong>Git/GitHub</strong><span class="muted">70%</span></div>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="card skill" data-skill="60">
+        <div style="display:flex; justify-content:space-between; align-items:center"><strong>PHP (Basics)</strong><span class="muted">60%</span></div>
+        <div class="bar"><span></span></div>
+      </div>
+    </div>
+  </section> -->
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-sub">A snapshot of my toolkit and proficiency.</p>
+
+        <div class="skills-grid">
+          <div class="card skill-card reveal">
+            <h3 style="margin-top: 0">Programming Languages</h3>
+            <div class="progress"><div class="bar" data-val="90"></div></div>
+            <small>Java</small>
+            <div class="progress"><div class="bar" data-val="80"></div></div>
+            <small>JavaScript</small>
+            <div class="progress"><div class="bar" data-val="75"></div></div>
+            <small>SQL</small>
+          </div>
+          <div class="card skill-card reveal">
+            <h3 style="margin-top: 0">Frontend</h3>
+            <div class="progress"><div class="bar" data-val="85"></div></div>
+            <small>HTML5 / CSS3</small>
+            <div class="progress"><div class="bar" data-val="70"></div></div>
+            <small>Responsive Design</small>
+            <div class="progress"><div class="bar" data-val="65"></div></div>
+            <small>Animations</small>
+          </div>
+          <div class="card skill-card reveal">
+            <h3 style="margin-top: 0">Frameworks</h3>
+            <div class="progress"><div class="bar" data-val="75"></div></div>
+            <small>Spring Boot</small>
+            <div class="progress"><div class="bar" data-val="60"></div></div>
+            <small>REST APIs</small>
+          </div>
+          <div class="card skill-card reveal">
+            <h3 style="margin-top: 0">Databases & Tools</h3>
+            <div class="progress"><div class="bar" data-val="70"></div></div>
+            <small>MySQL </small>
+            <div class="progress"><div class="bar" data-val="70"></div></div>
+            <small>Git & GitHub</small>
+            </div>
+        </div>
+
+        <div class="radials">
+          <div class="card radial reveal">
+            <div class="ring" data-pct="90"><span>Java 90%</span></div>
+          </div>
+          <div class="card radial reveal">
+            <div class="ring" data-pct="80"><span>JS 80%</span></div>
+          </div>
+          <div class="card radial reveal">
+            <div class="ring" data-pct="75"><span>SQL 75%</span></div>
+          </div>
+          <div class="card radial reveal">
+            <div class="ring" data-pct="70"><span>Spring 70%</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h3 class="section-title">Projects</h3>
+      <div class="projects-grid">
+        <article class="card project">
+          <div class="thumb"><i class="fa-solid fa-users"></i></div>
+          <h4 style="margin: 12px 0 6px">Employee Management System</h4>
+          <p class="muted">
+            A structured CRUD-based web application 
+            designed to efficiently manage employee records. 
+            The system allows users to add, update, delete, and view employee details, 
+            along with search and filtering features for improved usability.</p>
+          <div class="meta">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="links">
+              <a aria-label="Live demo" href="#" title="Live demo"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <a aria-label="Source code" href="https://github.com/junaid0714" title="Source code"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="thumb"><i class="fa-solid fa-hospital"></i></div>
+          <h4 style="margin: 12px 0 6px">Integrity based Authentication and Secure Information Transfer over Cloud for Hospital management system.</h4>
+          <p class="muted">
+           A secure cloud-based Hospital Management System featuring integrity-driven authentication, 
+           encrypted data transfer, and role-based access. Ensures safe handling and sharing of sensitive medical records.
+          </p>
+          <div class="meta">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap">
+              <span class="tag">Java</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Tomcat</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              </div>
+            <div class="links">
+              <a aria-label="Live demo" href="#" title="Live demo"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <a aria-label="Source code" href="#" title="Source code"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certs" class="reveal">
+      <h3 class="section-title">Certificates & Achievements</h3>
+      <div class="certs">
+        <div class="card cert">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h4>Masters Certificate</h4>
+          <p class="muted">Postgraduate academic achievement demonstrating strong 
+            foundational knowledge in computer science and application development.</p>
+        </div>
+        <div class="card cert">
+          <i class="fa-solid fa-code"></i>
+          <h4>full‑stack JAVA Certification</h4>
+          <p class="muted">Completed structured training in full-stack Java development, 
+            covering core Java, web development fundamentals, and project implementation.</p>
+        </div>
+        <div class="card cert">
+          <i class="fa-solid fa-certificate"></i>
+          <h4>Typing Certification (lower grade)</h4>
+          <p class="muted">Successfully completed certified typing training, improving speed and accuracy.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="reveal">
+      <h3 class="section-title">Contact</h3>
+      <div class="contact">
+        <form id="contactForm" class="card" style="padding: 18px" novalidate>
+          <div>
+            <label class="muted" for="name">Name</label>
+            <input
+              class="input"
+              id="name"
+              name="name"
+              placeholder="Your full name"
+              required
+            />
+          </div>
+          <div>
+            <label class="muted" for="email">Email</label>
+            <input
+              class="input"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div>
+            <label class="muted" for="message">Message</label>
+            <textarea
+              class="input"
+              id="message"
+              name="message"
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">
+            <i class="fa-regular fa-paper-plane"></i> Send
+          </button>
+          <p
+            id="formMsg"
+            class="muted"
+            role="status"
+            aria-live="polite"
+            style="margin: 6px 2px 0"
+          ></p>
+        </form>
+
+        <div
+          class="card"
+          style="
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+          "
+        >
+          <h4>Connect</h4>
+          <div class="socials">
+            <a href="tel:+916304215077" title="Phone">
+              <i class="fa-solid fa-phone"></i> +91 6304215077
+            </a>
+
+            <a href="mailto:junaid.mohd0007@gmail.com" title="Email">
+              <i class="fa-solid fa-envelope"></i> Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/junaid-ahmed-mohammad-766002341"
+              target="_blank"
+              rel="noreferrer"
+              title="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            >
+            <a
+              href="https://github.com/junaid0714"
+              target="_blank"
+              rel="noreferrer"
+              title="GitHub"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
+          <p class="muted">
+            I am open to internships and full-time opportunities. 
+            Feel free to contact me for collaborations, project discussions, or professional inquiries.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="card"
+        style="
+          padding: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+        "
+      >
+        <span
+          >© <span id="year"></span> Junaid • Built with HTML, CSS &
+          JS</span
+        >
+        <a class="btn btn-ghost" href="#home"
+          ><i class="fa-solid fa-arrow-up"></i> Back to top</a
+        >
+      </div>
+    </footer>
+
+    <button id="toTop" class="to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
